@@ -6,7 +6,7 @@ funciones de alto ordeb
 metodos 
 van los temas de la clase 4 hasta la clase 8
 */
-let saludo = alert(`Bienvenido a nuestra tienda `);
+let saludo = alert(`Bienvenido/a a nuestra tienda `);
 let pedirNombre = prompt(`Ingrese su nombre de usuario porfavor `);
 let carrito = [
   { nombre: "Camisa", precio: 12000, id: 1 },
@@ -73,4 +73,4 @@ if (descuento === "si") {
 } else if (descuento === "no") {
   alert(`Total a pagar: ${total}`);
 }
-let agradecimiento = alert(`Gracias por su compra `);
+let agradecimiento = alert(`Gracias por su compra ${pedirNombre}`);
