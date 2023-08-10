@@ -51,7 +51,7 @@ let total = productosSeleccionados.reduce((acumulador, producto) => {
 alert(detallesProductos);
 
 // parte en la que le pregunto al usuario si tiene un descuento 
-let descuento = prompt("¿Tiene un descuento? ( responda con si o  no)").toLowerCase();
+let descuento = prompt("¿Tiene un descuento? (escriba  si o  no)").toLowerCase();
 if (descuento === "si") {
   let porcentajeDescuento = parseFloat(prompt("Ingrese el porcentaje de descuento:"));
   if (porcentajeDescuento === 15) {
