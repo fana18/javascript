@@ -7,41 +7,46 @@ metodos
 van los temas de la clase 4 hasta la clase 8
 */
 let saludo = alert(`Bienvenido a nuestra tienda `);
-let pedirNombre=prompt(`Ingrese su nombre de usuario porfavor `)
+let pedirNombre = prompt(`Ingrese su nombre de usuario porfavor `);
 let carrito = [
-  { nombre: 'Camisa', precio: 12000, id: 1 },
-  { nombre: 'Jean', precio: 12500, id: 2},
-  { nombre: 'Remera Polo', precio: 12700, id: 3 },
-  { nombre: 'Pantalon Cargo', precio: 13500, id: 4 },
-  { nombre: 'Campera', precio: 21000, id: 5 },
-  { nombre: 'Buzo', precio: 14000, id: 6 },
-  { nombre: 'Sweater', precio: 12300, id: 7 },
-  { nombre: 'Cardigan', precio: 12900, id: 8 },
+  { nombre: "Camisa", precio: 12000, id: 1 },
+  { nombre: "Jean", precio: 12500, id: 2 },
+  { nombre: "Remera Polo", precio: 12700, id: 3 },
+  { nombre: "Pantalon Cargo", precio: 13500, id: 4 },
+  { nombre: "Campera", precio: 21000, id: 5 },
+  { nombre: "Buzo", precio: 14000, id: 6 },
+  { nombre: "Sweater", precio: 12300, id: 7 },
+  { nombre: "Cardigan", precio: 12900, id: 8 },
 ];
 
-// tengo que mostrar los productos que estan en el arreglo 
+// tengo que mostrar los productos que estan en el arreglo
 let productosDisponibles = "Productos disponibles:\n";
 for (let producto of carrito) {
   productosDisponibles += `${producto.nombre}\n`;
 }
 alert(productosDisponibles);
 
-//  compra 
-let productosElegidos = prompt("Ingrese los nombres de los productos que desea comprar, separados por comas:").toLowerCase();
+//  compra
+let productosElegidos = prompt(
+  "Ingrese los nombres de los productos que desea comprar, separados por comas:"
+).toLowerCase();
 
-//productos 
+//productos
 let productosSeleccionados = [];
 if (productosElegidos) {
   let productosElegidosArray = productosElegidos.split(",");
   for (let nombreProducto of productosElegidosArray) {
-    let productoEncontrado = carrito.find(producto => producto.nombre.toLowerCase() === nombreProducto.trim().toLowerCase());
+    let productoEncontrado = carrito.find(
+      (producto) =>
+        producto.nombre.toLowerCase() === nombreProducto.trim().toLowerCase()
+    );
     if (productoEncontrado) {
       productosSeleccionados.push(productoEncontrado);
     }
   }
 }
 
-// Mostrar nombres 
+// Mostrar nombres
 let detallesProductos = "Detalles de productos seleccionados:\n";
 let total = productosSeleccionados.reduce((acumulador, producto) => {
   detallesProductos += ` ${producto.nombre} - Precio: ${producto.precio}\n`;
@@ -50,10 +55,14 @@ let total = productosSeleccionados.reduce((acumulador, producto) => {
 
 alert(detallesProductos);
 
-// parte en la que le pregunto al usuario si tiene un descuento 
-let descuento = prompt("¿Tiene un descuento? (escriba  si o  no)").toLowerCase();
+// parte en la que le pregunto al usuario si tiene un descuento
+let descuento = prompt(
+  "¿Tiene un descuento? (escriba  si o  no)"
+).toLowerCase();
 if (descuento === "si") {
-  let porcentajeDescuento = parseFloat(prompt("Ingrese el porcentaje de descuento:"));
+  let porcentajeDescuento = parseFloat(
+    prompt("Ingrese el porcentaje de descuento:")
+  );
   if (porcentajeDescuento === 15) {
     let descuentoAplicado = total * (porcentajeDescuento / 100);
     let totalConDescuento = total - descuentoAplicado;
@@ -64,7 +73,4 @@ if (descuento === "si") {
 } else if (descuento === "no") {
   alert(`Total a pagar: ${total}`);
 }
-let agradecimiento = alert(`Gracias por su compra `)
-
-
-
+let agradecimiento = alert(`Gracias por su compra `);
