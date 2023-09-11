@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Sing up</title>
+  </head>
+  <body class="singup-img">
+    <main>
+      <section class="section">
+        <h1>Registro</h1>
+        <form id="signupForm">
+          <label>Nombre de usuario</label>
+          <input
+            type="text"
+            placeholder="Maximiliano"
+            id="name"
+            required
+            autofocus
+          />
+          <label>Mail</label>
+          <input
+            type="email"
+            placeholder="fanaa1827@gmail.com"
+            id="email"
+            required
+          />
+          <label>Contraseña</label>
+          <input
+            type="password"
+            placeholder="escriba una contraseña"
+            id="password"
+            required
+          />
+          <input type="submit" value="Registro" />
+        </form>
+        <p>Ya tienes una cuenta? <a href="login.html">Login</a></p>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/singup.js"></script>
+  </body>
+</html>

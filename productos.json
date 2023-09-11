@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "nombre": "Blue label",
+    "precio": "95000",
+    "cantidad": "1",
+    "imagen": "bluelabel.jpeg",
+    "categoria": "wisky"
+  },
+
+  {
+    "id": "2",
+    "nombre": "black label ",
+    "precio": "80000",
+    "cantidad": "1",
+    "imagen": "blacklabel.jpeg",
+    "categoria": "wisky"
+  },
+
+  {
+    "id": "3",
+    "nombre": "red label ",
+    "precio": "70000",
+    "cantidad": "1",
+    "imagen": "redlabel.jpeg",
+    "categoria": "wisky"
+  },
+
+  {
+    "id": "4",
+    "nombre": "campari",
+    "precio": "15000",
+    "cantidad": "1",
+    "imagen": "campari.jpeg",
+    "categoria": "campari"
+  },
+
+  {
+    "id": "5",
+    "nombre": "cerveza los andes ",
+    "precio": "1200",
+    "cantidad": "1",
+    "imagen": "cervezalosandes",
+    "categoria": "cerveza"
+  },
+
+  {
+    "id": "6",
+    "nombre": "fernet",
+    "precio": "1500",
+    "cantidad": "1",
+    "imagen": "fernet.jpeg",
+    "categoria": "fernet"
+  },
+
+  
+
+  {
+    "id": "8",
+    "nombre": "gancia",
+    "precio": "2000",
+    "cantidad": "1",
+    "imagen": "gancia.jpeg",
+    "categoria": "gancia"
+  },
+  {
+    "id": "9",
+    "nombre": "gin london",
+    "precio": "5000",
+    "cantidad": "1",
+    "imagen": "gintanq.jpeg",
+    "categoria": "gon"
+  },
+
+  {
+    "id": "10",
+    "nombre": "gin gordons",
+    "precio": "1200",
+    "cantidad": "1",
+    "imagen": "gordons.jpeg",
+    "categoria": "gin"
+  },
+
+  
+ 
+
+  {
+    "id": "13",
+    "nombre": "sky raspberry",
+    "precio": "3000",
+    "cantidad": "1",
+    "imagen": "skyraspberry.jpeg",
+    "categoria": "sky"
+  },
+
+  {
+    "id": "14",
+    "nombre": "smirnoff blueberry",
+    "precio": "15000",
+    "imagen": "sblueberry.jpeg",
+    "cantidad": "1",
+    "categoria": "smirnoff"
+  },
+
+  {
+    "id": "15",
+    "nombre": "smirnoff green",
+    "precio": "5000",
+    "cantidad": "1",
+    "imagen": "sgreen.jpeg",
+    "categoria": "smirnoff"
+  },
+  {
+    "id": "16",
+    "nombre": "ron",
+    "precio": "5000",
+    "cantidad": "1",
+    "imagen": "ron.jpeg ",
+    "categoria": "smirnoff"
+  }
+]
