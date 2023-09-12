@@ -12,9 +12,20 @@ loginForm.addEventListener("submit", (e) => {
       icon: "error",
       title: "Oops...",
       text: "usuario incorrecto!",
+      timer:1500
     });
   }
-  alert(`Bienvenido ${validUser.name}`);
+  Swal.fire({
+    title: `Bienvenido ${validUser.name}`,
+    showClass: {
+      popup: "animate__animated animate__fadeInDown",
+    },
+    hideClass: {
+      popup: "animate__animated animate__fadeOutUp",
+    },
+    timer:2000
+  })
+  
   localStorage.setItem("login_success", JSON.stringify(validUser));
   window.location.href = "../html/productos.html";
 });

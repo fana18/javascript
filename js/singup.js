@@ -9,17 +9,18 @@ signupForm.addEventListener("submit", (e) => {
   const isUserRegistered = Users.find((user) => user.email === email);
   if (isUserRegistered) {
     return Swal.fire({
-      title: "registro exitoso.",
+      title: "Registro Exitoso.",
       width: 600,
       padding: "3em",
       color: "#716add",
+      timer: 3000,
       background: "#fff url(/images/trees.png)",
       backdrop: `
-              rgba(0,0,123,0.4)
-              url("/images/nyan-cat.gif")
-              left top
-              no-repeat
-            `,
+        rgba(0,0,123,0.4)
+        url("/images/nyan-cat.gif")
+        left top
+        no-repeat
+      `,
     });
   }
 
@@ -30,7 +31,7 @@ signupForm.addEventListener("submit", (e) => {
     icon: "success",
     title: "regitrado",
     showConfirmButton: false,
-    timer: 1500,
+    timer: 2000,
   });
 
   window.location.href = "login.html";
