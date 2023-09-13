@@ -9,7 +9,7 @@ signupForm.addEventListener("submit", (e) => {
   const isUserRegistered = Users.find((user) => user.email === email);
   if (isUserRegistered) {
     return Swal.fire({
-      title: "Registro Exitoso.",
+      title: "El usuario ya existe.",
       width: 600,
       padding: "3em",
       color: "#716add",
@@ -26,13 +26,7 @@ signupForm.addEventListener("submit", (e) => {
 
   Users.push({ name: name, email: email, password: password });
   localStorage.setItem("users", JSON.stringify(Users));
-  Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "regitrado",
-    showConfirmButton: false,
-    timer: 2000,
-  });
+  
 
   window.location.href = "login.html";
 });
