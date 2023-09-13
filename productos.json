@@ -104,13 +104,5 @@
 
     "imagen": "sgreen.jpeg",
     "categoria": "smirnoff"
-  },
-  {
-    "id": "16",
-    "nombre": "ron",
-    "precio": "5000",
-
-    "imagen": "ron.jpeg ",
-    "categoria": "smirnoff"
   }
 ]
